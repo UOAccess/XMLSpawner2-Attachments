@@ -1,9 +1,8 @@
 # XmlParagon v1.00
+**updated 2/25/08**
+**ArteGordon**
 
-**Updated**: 2/25/08  
-**Author**: ArteGordon
-
-## Summary
+## SUMMARY
 An Xmlspawner attachment that can be applied to individual xmlspawners to customize paragon spawns from that spawner.  Various paragon spawning properties can be set such as buff factors, conversion rate, artifact drop rate, chest drop rate, hue, labels.  Paragon spawning on the spawner can also be entirely disabled.
 
 
@@ -27,6 +26,7 @@ To disable paragon spawning on any spawner, just set the EnableParagon property 
 
 Custom paragon attachments can also be scripted with different default behavior.  Some simple examples have been included.  MLParagon.cs changes the artifact drops to ML artifacts.  WeakParagon.cs is an XmlParagon attachment with weaker default buff factors.
 Custom attachments derived from the XmlParagon attachment can also be scripted and with the following methods that can be overridden for further customization
+
 ```csharp
         public virtual void XmlAddChest(BaseCreature bc, int treasureLevel)
         public virtual double XmlChestChance(BaseCreature bc)
@@ -54,7 +54,6 @@ using Server.Engines.XmlSpawner2;
 and make the following additional modifications
 
 around line 368 change this
-
 ```csharp
 		public bool IsParagon
 		{
@@ -100,6 +99,7 @@ to this
         }
 ```
 
+
 ### STEP 3:
 around line 542 change this
 
@@ -130,6 +130,7 @@ to this
             return damage;
         }
 ```
+
 
 
 ### STEP 4:

@@ -34,7 +34,8 @@ The minimum time between shots will be affected by the firing speed of the ammun
 
 [b][u]Making items damageable[/u][/b]
 
-[u]Manually to individual item/mobs [/u]
+[u]Manually to individual item/mobs 
+[/u]
 
 - the XmlSiege attachment can be added to objects in several ways.  It can be manually attached to any existing object with the "[addatt" command.
 
